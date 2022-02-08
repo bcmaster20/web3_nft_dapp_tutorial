@@ -11,7 +11,7 @@ contract JLToken is ERC721, ERC721URIStorage, Ownable {
     mapping(string => uint8) existingURIs;
     Counters.Counter private _tokenIdCounter;
 
-    constructor() ERC721("JLToken", "JLT") {}
+    constructor() ERC721("JLToken721", "JLT721") {}
 
     function _baseURI() internal pure override returns (string memory) {
         return "ipfs://";
